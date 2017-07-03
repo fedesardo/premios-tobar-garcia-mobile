@@ -1,0 +1,20 @@
+<ion-header color="primary">
+  <ion-navbar>
+    <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Rubros</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item *ngFor="let rubro of rubros">
+      <ion-icon name="microphone" item-start></ion-icon>
+      {{rubro.name}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>

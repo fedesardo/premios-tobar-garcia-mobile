@@ -4,16 +4,28 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+
+import { AcercaPage } from '../pages/acerca/acerca';
+import { IntroPage } from '../pages/intro/intro';
+import { JuradoPage } from '../pages/jurado/jurado';
+import { JuradoDetailPage } from '../pages/jurado-detail/jurado-detail';
+import { ReglamentoPage } from '../pages/reglamento/reglamento';
+import { RubroPage } from '../pages/rubro/rubro';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { RubrosMockProvider } from '../providers/rubros-mock/rubros-mock';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage
+    AcercaPage,
+    IntroPage,
+    JuradoPage,
+    JuradoDetailPage,
+    RubroPage,
+    ReglamentoPage,
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -22,13 +34,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage
+    AcercaPage,
+    IntroPage,
+    JuradoPage,
+    JuradoDetailPage,
+    RubroPage,
+    ReglamentoPage,
+    HomePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RubrosMockProvider
   ]
 })
 export class AppModule {}
