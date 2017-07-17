@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { JuradosMockProvider } from "../../providers/jurados-mock/jurados-mock";
 
-/**
- * Generated class for the JuradoDetailPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-jurado-detail',
@@ -14,11 +9,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class JuradoDetailPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  jurado: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private service:JuradosMockProvider) {
+         this.jurado = this.navParams.data;
+         service.findById(this.jurado.id).then(
+         jurado => this.jurado = jurado)
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad JuradoDetailPage');
-  }
 
 }

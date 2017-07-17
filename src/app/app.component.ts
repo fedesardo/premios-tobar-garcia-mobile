@@ -8,7 +8,7 @@ import { JuradoPage } from '../pages/jurado/jurado';
 import { ReglamentoPage } from '../pages/reglamento/reglamento';
 import { RubroPage } from '../pages/rubro/rubro';
 import { HomePage } from '../pages/home/home';
-import { IntroPage } from "../pages/intro/intro";
+import { ReconocimientoPage } from "../pages/reconocimiento/reconocimiento";
 
 @Component({
   templateUrl: 'app.html'
@@ -16,16 +16,17 @@ import { IntroPage } from "../pages/intro/intro";
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = IntroPage;
+  rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any, icon?: string}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage, icon: 'home' },
+      { title: 'El Premio', component: HomePage, icon: 'home' },
+      { title: 'Reconocimientos', component: ReconocimientoPage, icon: 'medal' },
       { title: 'Rubros', component: RubroPage, icon: 'trophy' },
       { title: 'Jurado', component: JuradoPage, icon: 'person' },
       { title: 'Reglamento', component: ReglamentoPage, icon: 'book' },

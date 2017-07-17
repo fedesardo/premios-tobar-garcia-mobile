@@ -6,26 +6,26 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 import { AcercaPage } from '../pages/acerca/acerca';
-import { IntroPage } from '../pages/intro/intro';
 import { JuradoPage } from '../pages/jurado/jurado';
 import { JuradoDetailPage } from '../pages/jurado-detail/jurado-detail';
 import { ReglamentoPage } from '../pages/reglamento/reglamento';
 import { RubroPage } from '../pages/rubro/rubro';
-
+import { ReconocimientoPage } from "../pages/reconocimiento/reconocimiento";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RubrosMockProvider } from '../providers/rubros-mock/rubros-mock';
+import { JuradosMockProvider } from '../providers/jurados-mock/jurados-mock';
 
 @NgModule({
   declarations: [
     MyApp,
     AcercaPage,
-    IntroPage,
-    JuradoPage,
     JuradoDetailPage,
+    JuradoPage,
     RubroPage,
     ReglamentoPage,
-    HomePage
+    HomePage,
+    ReconocimientoPage
   ],
   imports: [
     BrowserModule,
@@ -35,18 +35,19 @@ import { RubrosMockProvider } from '../providers/rubros-mock/rubros-mock';
   entryComponents: [
     MyApp,
     AcercaPage,
-    IntroPage,
     JuradoPage,
     JuradoDetailPage,
     RubroPage,
     ReglamentoPage,
-    HomePage
+    HomePage,
+    ReconocimientoPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RubrosMockProvider
+    RubrosMockProvider,
+    JuradosMockProvider
   ]
 })
 export class AppModule {}

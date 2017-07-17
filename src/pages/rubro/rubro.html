@@ -1,17 +1,17 @@
-<ion-header color="primary">
-  <ion-navbar>
+<ion-header>
+  <ion-navbar color="madera">
     <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
-        </button>
+    </button>
     <ion-title>Rubros</ion-title>
   </ion-navbar>
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
-  <ion-list>
-    <ion-item *ngFor="let rubro of rubros">
+  <ion-list no-lines>
+    <ion-item *ngFor="let rubro of rubros" text-wrap>
       <ion-icon name="microphone" item-start></ion-icon>
       {{rubro.name}}
     </ion-item>
