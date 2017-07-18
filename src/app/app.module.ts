@@ -15,6 +15,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RubrosMockProvider } from '../providers/rubros-mock/rubros-mock';
 import { JuradosMockProvider } from '../providers/jurados-mock/jurados-mock';
+import { Push } from '@ionic-native/push';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { JuradosMockProvider } from '../providers/jurados-mock/jurados-mock';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RubrosMockProvider,
-    JuradosMockProvider
+    JuradosMockProvider,
+    Push
   ]
 })
 export class AppModule {}

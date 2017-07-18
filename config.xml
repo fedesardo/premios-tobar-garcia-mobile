@@ -3,7 +3,7 @@
     <name>Premios Tobar Garcia</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.0.91:8100" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
     <allow-navigation href="http://192.168.56.1:8100" />
@@ -88,4 +88,7 @@
     <plugin name="cordova-plugin-statusbar" spec="^2.2.2" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.1" />
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
+    <plugin name="phonegap-plugin-push" spec="^1.10.5">
+        <variable name="SENDER_ID" value="832555175894" />
+    </plugin>
 </widget>
