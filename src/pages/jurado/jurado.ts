@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { JuradosMockProvider } from "../../providers/jurados-mock/jurados-mock";
 import { JuradoDetailPage } from '../../pages/jurado-detail/jurado-detail';
 
 
-@IonicPage()
 @Component({
   selector: 'page-jurado',
   templateUrl: 'jurado.html',

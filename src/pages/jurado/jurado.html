@@ -4,7 +4,7 @@
      <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Jurado</ion-title>
+    <ion-title>JURADO</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -13,6 +13,7 @@
 <ion-content>
   
   <ion-list no-lines>
+      <p>El jurado de premiación está compuesto por profesionales de los medios mas importantes del pais, nos enorgullese presentar a:</p>
         <button ion-item *ngFor="let jurado of jurados" (click)="openJuradoDetail(jurado)">
             <ion-avatar item-left>
                 <img src="{{jurado.image}}"/>

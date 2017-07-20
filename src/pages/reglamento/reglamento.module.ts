@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+/*import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { ReglamentoPage } from './reglamento';
 
@@ -14,3 +14,4 @@ import { ReglamentoPage } from './reglamento';
   ]
 })
 export class ReglamentoPageModule {}
+*/

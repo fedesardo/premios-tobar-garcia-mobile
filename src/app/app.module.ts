@@ -1,11 +1,9 @@
+import { ContactoPage } from './../pages/contacto/contacto';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
-import { AcercaPage } from '../pages/acerca/acerca';
 import { JuradoPage } from '../pages/jurado/jurado';
 import { JuradoDetailPage } from '../pages/jurado-detail/jurado-detail';
 import { ReglamentoPage } from '../pages/reglamento/reglamento';
@@ -20,13 +18,13 @@ import { Push } from '@ionic-native/push';
 @NgModule({
   declarations: [
     MyApp,
-    AcercaPage,
     JuradoDetailPage,
     JuradoPage,
     RubroPage,
     ReglamentoPage,
     HomePage,
-    ReconocimientoPage
+    ReconocimientoPage,
+    ContactoPage
   ],
   imports: [
     BrowserModule,
@@ -35,13 +33,13 @@ import { Push } from '@ionic-native/push';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AcercaPage,
     JuradoPage,
     JuradoDetailPage,
     RubroPage,
     ReglamentoPage,
     HomePage,
-    ReconocimientoPage
+    ReconocimientoPage,
+    ContactoPage
   ],
   providers: [
     StatusBar,

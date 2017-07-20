@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+/*import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { HomePage } from './home';
 
@@ -13,4 +13,4 @@ import { HomePage } from './home';
     HomePage
   ]
 })
-export class HomePageModule {}
+export class HomePageModule {}*/

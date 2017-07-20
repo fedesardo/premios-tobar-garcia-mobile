@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+/*import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { JuradoPage } from './jurado';
 
@@ -13,4 +13,4 @@ import { JuradoPage } from './jurado';
     JuradoPage
   ]
 })
-export class JuradoPageModule {}
+export class JuradoPageModule {}*/

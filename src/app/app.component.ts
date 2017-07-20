@@ -1,9 +1,8 @@
+import { ContactoPage } from './../pages/contacto/contacto';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform, AlertController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
-import { AcercaPage } from '../pages/acerca/acerca';
 import { JuradoPage } from '../pages/jurado/jurado';
 import { ReglamentoPage } from '../pages/reglamento/reglamento';
 import { RubroPage } from '../pages/rubro/rubro';
@@ -33,7 +32,7 @@ export class MyApp {
       { title: 'Rubros', component: RubroPage, icon: 'trophy' },
       { title: 'Jurado', component: JuradoPage, icon: 'person' },
       { title: 'Reglamento', component: ReglamentoPage, icon: 'book' },
-      { title: 'Acerca de', component: AcercaPage, icon:'information-circle' }
+      { title: 'Contacto', component: ContactoPage, icon:'information-circle' }
     ];
 
   }

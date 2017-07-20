@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+/*import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { JuradoDetailPage } from './jurado-detail';
 
@@ -14,3 +14,4 @@ import { JuradoDetailPage } from './jurado-detail';
   ]
 })
 export class JuradoDetailPageModule {}
+*/

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+/*import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { ReconocimientoPage } from './reconocimiento';
 
@@ -14,3 +14,4 @@ import { ReconocimientoPage } from './reconocimiento';
   ]
 })
 export class ReconocimientoPageModule {}
+*/

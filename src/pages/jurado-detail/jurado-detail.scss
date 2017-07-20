@@ -7,7 +7,7 @@
 
     ion-card-content {
 
-      background-color: map-get($colors, primary);
+      background-color: map-get($colors, madera);
       color: #FFFFFF;
       text-align: center;
       padding-bottom: 28px;
@@ -18,11 +18,11 @@
         border-radius: 50%;
         margin-top: -100px;
         border: solid 4px #FFFFFF;
-        display: inline;
+        //display: inline;
       }
 
       h2 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         margin-top: .5rem;
         color: white;
       }
@@ -31,6 +31,23 @@
         font-size: 1.8rem;
         color: white;
       }
+
+                   p:first-letter {
+                text-transform: uppercase;
+            }
+
+            p {
+                padding: 5px;
+                color: #ffffff;
+                font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+                letter-spacing: 0em;
+                text-align: left ;
+                margin: 20px auto;
+                text-transform: lowercase;
+                line-height: 100%;
+                font-size: 12pt;
+                font-variant: small-caps;
+            }
 
     }
 
