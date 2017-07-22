@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="ar.com.garcia.tobar.premios.fgs" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="ar.com.garcia.tobar.premios.fgs" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Premios Tobar Garcia</name>
     <description>El Premio Carolina Tobar García es el máximo galardón que se entrega a las producciones
     radiales de la provincia de San Luis. Organizados por Mauricio Gutvay Producciones y el Sindicato de
     Luz y Fuerzas, Seccional Quines, con el auspicio de la Municipalidad de Quines.
     </description>
     <author email="fedesardo@gmail.com">Federico Sardo</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.0.91:8100" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
     <allow-navigation href="http://192.168.56.1:8100" />

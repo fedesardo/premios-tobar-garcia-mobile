@@ -1,6 +1,6 @@
 import { ContactoPage } from './../pages/contacto/contacto';
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform, AlertController } from 'ionic-angular';
+import { Nav, Platform, AlertController, ToastController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { JuradoPage } from '../pages/jurado/jurado';
@@ -21,7 +21,7 @@ export class MyApp {
   pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, public push: Push,
-  public alertCtrl: AlertController) {
+  public alertCtrl: AlertController,  public toastCtrl:ToastController) {
 
     this.initializeApp();
 
@@ -44,6 +44,43 @@ export class MyApp {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
       this.pushSetup();
+
+
+      var lastTimeBackPress = 0;
+var timePeriodToExit  = 2000;
+
+        this.platform.registerBackButtonAction(() => {
+            // get current active page
+            let view = this.nav.getActive();
+            if (view.component.name == "HomePage") {
+                //Double check to exit app
+                if (new Date().getTime() - lastTimeBackPress < timePeriodToExit) {
+                    this.platform.exitApp(); //Exit from app
+                } else {
+                    let toast = this.toastCtrl.create({
+                        message:  'Presiona nuevamente para salir de Premios Tobar Garcia',
+                        duration: 3000,
+                        position: 'center'
+                    });
+                    toast.present();
+                    lastTimeBackPress = new Date().getTime();
+                }
+            } else {
+                // go to previous page
+                if (view.component.name == 'JuradoDetailPage'){
+                            this.nav.pop();
+                }else {
+                            this.nav.setRoot(HomePage);
+                }
+                
+            }
+        });
+
+
+
+
+
+
     });
   }
 
