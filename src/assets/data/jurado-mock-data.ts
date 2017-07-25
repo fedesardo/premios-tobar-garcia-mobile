@@ -360,6 +360,18 @@ let jurados: Array<any> = [
                 Conduce "¿Qué te Puedo Cobrar?" por la Rock & Pop, de lunes a viernes de 17 a 20, junto a Natalia Carulias, Juan Barraza y Rama Pantorotto. \n
                 Desde 2012 hasta el año pasado formó parte del equipo de "Lalo por hecho" ppr Rock and Pop, junto a Lalo Mir, el programa más escuchado de la segunda mañana de Ciudad de Buenos Aires y Gran Buenos Aires y el resto del país, llevándose el 12.6 por ciento del rating.
                 `
+},
+{
+    id: '30',
+    nombre: 'Maximiliano',
+    apellido: 'Bron',
+    image: 'assets/image/jurado/maxi-bron.jpg',
+    biografia: `Licenciado en Comunicación Social. \n
+                Magister en nuevas Tecnologías. \n
+                Docente universitario e investigador en la Universidad Nacional de La Rioja donde se desempeña como Profesor Titular de Comunicación Multimedia y de Gestión de la empresa periodística en la Licenciatura en Comunicación Social. \n
+                También es profesor titular en la Universidad Empresarial Siglo 21 a cargo de la cátedra Estrategias y Planificación de Medios de la Licenciatura en Publicidad, y capacitador en diferentes instituciones, públicas y privadas. \n
+                Miembro del Comité Organizador y/o Académico del Festival de Publicidad Social Equidar de la UNC y las Jornadas de Comunicación y Dispositivos Digitales de la Universidad Nacional de Salta.
+                `
 }
 
 ];
